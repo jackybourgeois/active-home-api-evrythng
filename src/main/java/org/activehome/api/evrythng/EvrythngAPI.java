@@ -33,6 +33,7 @@ import org.activehome.com.Request;
 import org.activehome.com.ShowIfErrorCallback;
 import org.activehome.com.Status;
 import org.activehome.context.data.DataPoint;
+import org.kevoree.annotation.ComponentType;
 import org.kevoree.annotation.Input;
 import org.kevoree.annotation.Param;
 import org.kevoree.annotation.Start;
@@ -46,10 +47,9 @@ import java.util.Map;
  * @author Jacky Bourgeois
  * @version %I%, %G%
  */
+@ComponentType(description = "Active Home API for the Evrythng platform.")
 public class EvrythngAPI extends API {
 
-    @Param(defaultValue = "Active Home API for the Evrythng platform.")
-    private String description;
     @Param(defaultValue = "/active-home-evrythng")
     private String src;
     @Param(optional = false)

@@ -28,6 +28,7 @@ import com.eclipsesource.json.JsonObject;
 import org.activehome.com.Notif;
 import org.activehome.context.data.DataPoint;
 import org.activehome.test.ComponentTester;
+import org.kevoree.annotation.ComponentType;
 import org.kevoree.annotation.Input;
 import org.kevoree.annotation.Param;
 
@@ -39,10 +40,9 @@ import java.util.concurrent.TimeUnit;
  * @author Jacky Bourgeois
  * @version %I%, %G%
  */
+@ComponentType(description = "Mock up to test Evrythng API.")
 public class TesterEvrythngAPI extends ComponentTester {
 
-    @Param(defaultValue = "Mock up to test Evrythng API")
-    private String description;
     @Param(defaultValue = "/active-home-api-evrythng")
     private String src;
 
