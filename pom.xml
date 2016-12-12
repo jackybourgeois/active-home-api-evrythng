@@ -6,10 +6,21 @@
 
     <groupId>org.active-home</groupId>
     <artifactId>org.active-home.api.evrythng</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.3-SNAPSHOT</version>
     <name>Active Home :: API :: EVRYTHNG</name>
     <description>Connect Active Home to EVRYTHNG.</description>
     <url>http://active-home.org</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <kevoree.version>5.4.0-SNAPSHOT</kevoree.version>
+        <kmf.version>4.26.0</kmf.version>
+        <junit.version>4.11</junit.version>
+        <jdk.target>1.8</jdk.target>
+        <kevoree.log.version>1</kevoree.log.version>
+        <kevoree.kcl.version>19</kevoree.kcl.version>
+        <license.licenseName>gpl_v3</license.licenseName>
+    </properties>
 
     <organization>
         <name>Active Home Project</name>
@@ -52,17 +63,6 @@
             <version>${kevoree.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.kevoree.log</groupId>
-            <artifactId>org.kevoree.log</artifactId>
-            <version>1</version>
-        </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.8.1</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
             <groupId>org.active-home</groupId>
             <artifactId>org.active-home.api</artifactId>
             <version>0.0.3-SNAPSHOT</version>
@@ -77,23 +77,7 @@
             <artifactId>org.active-home.test</artifactId>
             <version>0.0.3-SNAPSHOT</version>
         </dependency>
-        <dependency>
-            <groupId>com.evrythng</groupId>
-            <artifactId>evrythng-java-wrapper</artifactId>
-            <version>1.32</version>
-        </dependency>
     </dependencies>
-
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <kevoree.version>5.3.2</kevoree.version>
-        <kmf.version>4.26.0</kmf.version>
-        <junit.version>4.11</junit.version>
-        <jdk.target>1.8</jdk.target>
-        <kevoree.log.version>1</kevoree.log.version>
-        <kevoree.kcl.version>19</kevoree.kcl.version>
-        <license.licenseName>gpl_v3</license.licenseName>
-    </properties>
 
 
     <build>
@@ -229,7 +213,6 @@
             <id>kevoree-oss</id>
             <url>https://oss.sonatype.org/content/groups/public/</url>
         </repository>
-
     </repositories>
 
     <pluginRepositories>
