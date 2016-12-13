@@ -14,6 +14,8 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <kevoree.version>5.4.0-SNAPSHOT</kevoree.version>
+        <kevoree.registry.login>${kevoree.login}</kevoree.registry.login>
+        <kevoree.registry.password>${kevoree.password}</kevoree.registry.password>
         <kmf.version>4.26.0</kmf.version>
         <junit.version>4.11</junit.version>
         <jdk.target>1.8</jdk.target>
@@ -105,6 +107,11 @@
                         </goals>
                     </execution>
                 </executions>
+                <configuration>
+                    <namespace>activehome</namespace>
+                    <login>${kevoree.registry.login}</login>
+                    <password>${kevoree.registry.password}</password>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.sonatype.plugins</groupId>
